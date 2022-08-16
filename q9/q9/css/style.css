@@ -2,3 +2,137 @@
 
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */
+
+.green-box  {
+  width: 200px;
+  height: 200px;
+  background: #76ff826b;
+  margin: 0 auto;
+}
+
+.blue-box {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.fadein {
+  animation: fadeIn 4s 0s ease normal;
+}
+
+.fadeout {
+  animation: fadeout 4s 4s ease normal;
+}
+
+.rotate {
+  animation: rotate-anime 4s linear infinite;
+}
+
+@keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+@keyframes fadeout{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-anime{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.hover-color:hover {
+  background-color: #ff27e2c9;
+}
+
+.hover-rotate:hover {
+  transform: rotateZ(360deg);
+}
+
+.hover-up-slide:hover {
+  transform: translateY(-20%);
+}
+
+.hover-right-slide:hover {
+  transform: translateX(20%);
+}
+
+.hover-height:hover{
+  height: 300px;
+}
+
+.hover-width:hover {
+  width: 500px;
+}
+
+.hover-border {
+  box-sizing: border-box;
+}
+
+.hover-border:hover {
+  border: 10px #00ffe5 solid;
+}
+
+.hover-shadow:hover {
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  margin: 0px auto;
+  border: solid 10px #ecf1f2;
+  border-radius: 50%;
+  border-top: solid 10px #14ff4bcd;
+  animation: rotate-anime 1.1s linear infinite;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-left: 0px;
+}
+
+.card-list :first-child {
+  border-left:  1px solid #000000;;
+}
+
+.card p {
+  margin-top: 20px;
+}
+
+.icon {
+  background: url(https://picsum.photos/id/1005/200/300) no-repeat center/cover;
+  width: 150px;
+  height: 150px;
+  margin: 0px auto;
+  border-radius: 50%;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 3px #424242d0;
+  z-index: 1;
+}

@@ -1,1 +1,33 @@
 @charset "UTF-8";
+
+.border-radius {
+  width: 500px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  background: #fad296;
+  border: solid 5px #8f5a0a;
+  border-radius: 30px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.border-radius:before, .border-radius:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 9%;
+  transform: translateX(-50%);
+}
+
+.border-radius:before {
+  border-top: 25px solid #8f5a0a;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+}
+
+.border-radius:after {
+  border-top: 18px solid #fad296;
+  border-right: 18px solid transparent;
+  border-left: 18px solid transparent;
+}
