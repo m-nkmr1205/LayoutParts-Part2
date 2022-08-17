@@ -114,6 +114,7 @@
   background: #ffffff;
   border: 1px solid #000000;
   border-left: 0px;
+  transition: 0.5s;
 }
 
 .card-list :first-child {
